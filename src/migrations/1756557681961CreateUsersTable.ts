@@ -14,6 +14,7 @@ export class CreateUsersTable1756557681961 implements MigrationInterface {
         "first_name" varchar(128) NOT NULL,
         "last_name" varchar(128) NOT NULL,  -- Fixed spacing issue here
         "email" varchar(256) NOT NULL,
+        "password" varchar(256) NOT NULL,
         CONSTRAINT "UQ_email" UNIQUE ("email")
       );
     `);

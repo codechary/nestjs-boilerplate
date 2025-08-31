@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME,
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   logging: true,  // Enable detailed logging
-  migrations: [__dirname + '/src/migration/**/*.ts'], // Ensure this path is correct
+  migrations: [__dirname + 'src/migrations/*{.ts,.js}'], // Ensure this path is correct
   synchronize: false, // Always set to false when using migrations
   namingStrategy: new SnakeNamingStrategy(),
 });
